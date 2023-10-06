@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HtmlTagsFetcher.cs" />
+    <Compile Include="ImageFileExtensionCheck.cs" />
     <Compile Include="LowercaseSequenceWithUnderscore.cs" />
     <Compile Include="OccuranceCounter.cs" />
     <Compile Include="Program.cs" />
