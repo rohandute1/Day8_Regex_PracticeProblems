@@ -14,7 +14,8 @@ namespace Day8_RegexPracticeProblem
             Console.WriteLine("Please select program form list:");
             Console.WriteLine("1.Program that matches a string that has an ‘a’ followed by two to three 'b'.\n" +
                 "2.Program to find sequences of lowercase letters joined by an underscore.\n" +
-                "3.Program to fetch all HTML tags from a given string.");
+                "3.Program to fetch all HTML tags from a given string.\n" +
+                "4.Program to count the number of occurrences of the pattern in a given string.");
             int choose = Convert.ToInt32(Console.ReadLine());
 
             switch (choose)
@@ -30,6 +31,15 @@ namespace Day8_RegexPracticeProblem
                 case 3:
                     HtmlTagsFetcher.FetchHtmlTags();
                     break;
+
+                case 4:
+                    OccuranceCounter patternCounter = new OccuranceCounter();
+
+                    int count = patternCounter.CountOccurrences();
+
+                    Console.WriteLine($"There are {count} occurrences of the pattern in the input string.");
+                    break;
+
             }
 
             Console.ReadLine();
