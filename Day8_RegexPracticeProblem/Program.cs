@@ -16,7 +16,8 @@ namespace Day8_RegexPracticeProblem
                 "2.Program to find sequences of lowercase letters joined by an underscore.\n" +
                 "3.Program to fetch all HTML tags from a given string.\n" +
                 "4.Program to count the number of occurrences of the pattern in a given string.\n" +
-                "5.Program to find valid file names with an image file type extension. ");
+                "5.Program to find valid file names with an image file type extension.\n" +
+                "6.Program to validate a website address format.");
             int choose = Convert.ToInt32(Console.ReadLine());
 
             switch (choose)
@@ -43,6 +44,10 @@ namespace Day8_RegexPracticeProblem
 
                 case 5:
                     ImageFileExtensionCheck.ExtensionChecker();
+                    break;
+
+                case 6:
+                    WebsiteValidator.ValidateWebsite();
                     break;
 
             }
